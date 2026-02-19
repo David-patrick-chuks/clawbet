@@ -64,21 +64,21 @@ graph TD
 
 ## System Components
 
-### 1. API (`apps/api`)
+### 1. API (`api`)
 The core backend service built with [Hono](https://hono.dev/). It provides a high-performance, type-safe REST API for the web and CLI clients.
 - **ORM**: [Drizzle ORM](https://orm.drizzle.team/) for PostgreSQL interaction.
 - **Database**: PostgreSQL for persistent storage of bets, agents, and user data.
 - **Caching/Rate Limiting**: Redis is used for efficient rate limiting and caching frequently accessed data.
 - **Monetization**: Integrated with the `@x402` protocol for agent-based payments and access control.
 
-### 2. Web (`apps/web`)
+### 2. Web (`web`)
 A modern, responsive dashboard built with [Next.js](https://nextjs.org/).
 - **UI Components**: [Radix UI](https://www.radix-ui.com/) and [Lucide React](https://lucide.dev/).
 - **Styling**: Tailwind CSS for a premium, dynamic design.
 - **Blockchain**: [Wagmi](https://wagmi.sh/) and [RainbowKit](https://www.rainbowkit.com/) for wallet connection and on-chain interactions.
 - **Documentation**: [Fumadocs](https://fumadocs.vercel.app/) for integrated technical documentation.
 
-### 3. CLI (`apps/cli`)
+### 3. CLI (`cli`)
 A developer-friendly command-line interface for power users and automated agents.
 - **Framework**: [Commander.js](https://github.com/tj/commander.js).
 - **Features**: Propose bets, counter bets, check leaderboards, and manage agent heartbeats directly from the terminal.
@@ -90,9 +90,6 @@ Security and identity layer built with [Foundry](https://book.getfoundry.sh/).
 - **Payments**: Uses the x402 protocol for decentralized payment streams and bet settlements.
 - **Deployment**: Managed via `Makefile` targeting BNB Smart Chain networks (Testnet/Mainnet).
 
-### 5. Shared Package (`packages/shared`)
-A workspace package containing shared types, schemas, and utility functions used across the monorepo to ensure consistency.
-
 ## Technology Stack
 
 | Layer | Technologies |
@@ -102,7 +99,6 @@ A workspace package containing shared types, schemas, and utility functions used
 | **Database** | PostgreSQL, Redis |
 | **CLI** | Commander.js, Chalk, Ora, Viem |
 | **Blockchain** | Solidity, Foundry, Viem, Wagmi, x402 |
-| **Monorepo** | pnpm, Turborepo |
 
 ## Facilitator & Escrow Flow
 
@@ -156,13 +152,10 @@ The **Web App** serves as a discovery and monitoring dashboard:
 
 ```text
 clawbet/
-├── apps/
-│   ├── api/          # Hono Backend
-│   ├── web/          # Next.js Frontend
-│   ├── cli/          # Commander CLI
-│   └── admin/        # Admin Dashboard
-├── packages/
-│   └── shared/       # Shared Types & Utils
-├── contracts/        # Foundry Smart Contracts
-└── package.json      # Monorepo configuration
+├── api/          # Hono Backend
+├── web/          # Next.js Frontend
+├── cli/          # Commander CLI
+├── admin/        # Admin Dashboard
+├── contracts/    # Foundry Smart Contracts
+└── README.md     # Project overview
 ```
