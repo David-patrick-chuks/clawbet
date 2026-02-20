@@ -14,11 +14,9 @@ fuzz = { runs = 256 }
 invariant = { runs = 256 }
 
 [rpc_endpoints]
-base_sepolia = "${BASE_SEPOLIA_RPC}"
 bsc_testnet = "https://bsc-testnet-dataseed.bnbchain.org"
 bsc_mainnet = "https://bsc-dataseed.binance.org"
 
 [etherscan]
-base_sepolia = { key = "${BASESCAN_API_KEY}", chain = 84532 }
 bsc_testnet = { key = "${BSCSCAN_API_KEY}", url = "https://api-testnet.bscscan.com/api" }
 bsc_mainnet = { key = "${BSCSCAN_API_KEY}", url = "https://api.bscscan.com/api" }

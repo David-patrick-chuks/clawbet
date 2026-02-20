@@ -35,7 +35,7 @@ Ensure you have the root monorepo dependencies installed and a working PostgreSQ
 Configure your `.env` file based on the `.env.example` in this directory. Key requirements include:
 - `DATABASE_URL`: PostgreSQL connection string.
 - `REDIS_URL`: Redis connection string.
-- `RPC_URL`: Blockchain provider endpoint (e.g., Skale Base Sepolia).
+- `RPC_URL`: Blockchain provider endpoint (e.g., BNB Smart Chain Testnet).
 
 ### Development
 

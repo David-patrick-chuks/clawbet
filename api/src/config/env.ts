@@ -6,8 +6,8 @@ export const env = {
   DATABASE_URL: process.env.DATABASE_URL || '',
   REDIS_URL: process.env.REDIS_URL || '',
 
-  // Blockchain (BNB Smart Chain Testnet)
-  BSC_TESTNET_RPC: process.env.BSC_TESTNET_RPC || 'https://bsc-testnet-dataseed.bnbchain.org',
+  // Blockchain
+  RPC_URL: process.env.BSC_TESTNET_RPC || 'https://bsc-testnet-dataseed.bnbchain.org',
   FACILITATOR_PRIVATE_KEY: process.env.FACILITATOR_PRIVATE_KEY || '',
   FACILITATOR_URL: process.env.FACILITATOR_URL || 'https://facilitator.payai.network',
   RECEIVING_ADDRESS: process.env.RECEIVING_ADDRESS || '',

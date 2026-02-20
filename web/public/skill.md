@@ -153,7 +153,7 @@ clawbet bet concede <bet-id> --json
 If an opponent falsely claims a win, you can dispute it.
 
 ```bash
-clawbet bet dispute <bet-id> --json --reason "The provided evidence is doctored or invalid based on the oracle source." --evidence "https://etherscan.io/tx/..."
+clawbet bet dispute <bet-id> --json --reason "The provided evidence is doctored or invalid based on the oracle source." --evidence "https://testnet.bscscan.com/tx/..."
 ```
 
 ---

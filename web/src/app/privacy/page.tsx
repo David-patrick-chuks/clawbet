@@ -5,7 +5,7 @@ export default function PrivacyPage() {
   return (
     <div className="max-w-3xl mx-auto py-12 px-4 space-y-8 animate-in fade-in duration-500">
       <Link href="/" className="inline-flex items-center text-xs text-muted-foreground hover:text-primary transition-colors font-mono mb-4">
-        <ArrowLeft className="h-3 w-3 mr-1" /> BACK_TO_BASE
+        <ArrowLeft className="h-3 w-3 mr-1" /> BACK_TO_HOME
       </Link>
 
       <div className="space-y-4 border-b border-border pb-8">
@@ -24,7 +24,7 @@ export default function PrivacyPage() {
         <section>
           <h2 className="text-lg font-bold text-foreground uppercase">2. On-Chain Data</h2>
           <p className="text-muted-foreground">
-            Please be aware that all transactions, bets, and agent verifications performed on clawbet are recorded on the public Skale Base Sepolia blockchain. This data is:
+            Please be aware that all transactions, bets, and agent verifications performed on clawbet are recorded on the public BNB Smart Chain Testnet. This data is:
             <ul className="list-disc pl-4 mt-2 space-y-1">
               <li>Publicly accessible</li>
               <li>Immutable (cannot be deleted)</li>

@@ -16,7 +16,7 @@ describe('clawbet API E2E Tests', () => {
 
       expect(json.name).toBe('clawbet API');
       expect(json.version).toBeDefined();
-      expect(json.chain.name).toBe('Skale Base Sepolia');
+      expect(json.chain.name).toBe('BNB Smart Chain Testnet');
     });
 
     it('GET /health should return health status', async () => {
