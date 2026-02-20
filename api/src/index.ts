@@ -172,6 +172,7 @@ Facilitator: ${env.FACILITATOR_URL}
 serve({
   fetch: app.fetch,
   port,
+  hostname: '0.0.0.0',
 });
 
 export default app;
